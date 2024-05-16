@@ -34,29 +34,29 @@ nav{
   width: 100%;
   z-index: 1;
   background-color: #fff;
-  border-botton: 1px solid #ccc
+  border-bottom: 1px solid #ccc;
 }
 
-nav: after{
+nav:after{
   clear: both;
   content:"";
   display: block;
   height: 50px;
   width: 50px;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .nav-container{
-  max-width: 1200;
+  max-width: 1200px;
   position: relative;
   margin-right: auto;
   margin-left: auto;
 }
 
 #logo{
-  width: 50px;
-  height: 50px;
-  margin-top: 25px;
+  width: 105px;
+  height: 100px;
+  margin-top: 0px;
 }
 
 .nav-container ul{
@@ -78,14 +78,14 @@ nav: after{
   transition: .5s;
 }
 
-.nav-container li a: hover{
-  color: #3381F3;
+.nav-container li a:hover{
+  color: #003c96;
 }
 
 /*banner*/
 #main-banner{
   background-color: red;
-  background: url(../img/banner6jpg) no-repeat;
+  background: url(../img/banner6.jpg) no-repeat;
   background-size: cover;
   background-position: 0 55%;
   position: relative;
@@ -116,14 +116,15 @@ nav: after{
 /*formulário*/
 
 #search-form input, #search-form select{
-  background-color: #FFF;
-  border ?
+  background-color: #ffffff;
+  text-transform: uppercase;
   border-color: transparent;
   padding: 10px 20px;
   font-size: 18px;
   margin: 0 10px;
 }
 
-  #search-form input [type=submit]{
-    background-color:
+  #search-form input [type=submit]:hover{
+    background-color: #000000;
+   
   }
