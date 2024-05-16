@@ -1,9 +1,9 @@
-/*reset*/
+/* Reset */
 body {
   margin: 0;
 }
 
-/*geral*/
+/* Geral */
 html {
   font-family: "Open Sans", sans-serif;
 }
@@ -18,16 +18,16 @@ h1, h2, h3, h4, h5, p, span {
   width: 100%;
 }
 
-/*header*/
-header{
+/* Header */
+header {
   position: relative;
   top: 0;
   height: auto;
   width: 100%;
 }
 
-/*navbar*/
-nav{
+/* Navbar */
+nav {
   position: fixed;
   top: 0;
   height: 100px;
@@ -37,62 +37,60 @@ nav{
   border-bottom: 1px solid #ccc;
 }
 
-nav:after{
+nav:after {
   clear: both;
-  content:"";
+  content: "";
   display: block;
   height: 50px;
   width: 50px;
   background-color: transparent;
 }
 
-.nav-container{
+.nav-container {
   max-width: 1200px;
   position: relative;
   margin-right: auto;
   margin-left: auto;
 }
 
-#logo{
+#logo {
   width: 105px;
   height: 100px;
   margin-top: 0px;
 }
 
-.nav-container ul{
+.nav-container ul {
   float: right;
   height: 100px;
   line-height: 100px;
   margin: 0;
 }
 
-.nav-container li{
+.nav-container li {
   list-style: none;
   float: left;
   margin: 0 15px;
 }
 
-.nav-container li a{
+.nav-container li a {
   text-decoration: none;
   color: #666;
   transition: .5s;
 }
 
-.nav-container li a:hover{
+.nav-container li a:hover {
   color: #003c96;
 }
 
-/*banner*/
-#main-banner{
-  background-color: red;
-  background: url(../img/banner6.jpg) no-repeat;
-  background-size: cover;
-  background-position: 0 55%;
+/* Banner */
+#main-banner {
+  background-color: red; /* Substituí essa linha pela próxima, já que a propriedade 'background' é sobrescrita */
+  background: url(../img/banner6.jpg) no-repeat center/cover;
   position: relative;
   margin-top: 100px;
 }
 
-#search-from{
+#search-form {
   position: relative;
   width: 80%;
   margin-left: auto;
@@ -102,20 +100,19 @@ nav:after{
   text-align: center;
 }
 
-#search-form h1{
+#search-form h1 {
   font-size: 40px;
 }
 
-#search-form p{
+#search-form p {
   margin-top: 30px;
   margin-bottom: 60px;
   font-size: 18px;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
-/*formulário*/
-
-#search-form input, #search-form select{
+/* Formulário */
+#search-form input, #search-form select {
   background-color: #ffffff;
   text-transform: uppercase;
   border-color: transparent;
@@ -124,7 +121,14 @@ nav:after{
   margin: 0 10px;
 }
 
-  #search-form input [type=submit]:hover{
-    background-color: #000000;
-   
-  }
+#search-form input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff; /* Adicionei a cor do texto para que seja visível */
+  border: none; /* Removi a borda para o botão de envio */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adicionei transição para suavizar a mudança de cor */
+}
+
+#search-form input[type="submit"]:hover {
+  background-color: #333333; /* Alterei a cor de fundo ao passar o mouse */
+}
